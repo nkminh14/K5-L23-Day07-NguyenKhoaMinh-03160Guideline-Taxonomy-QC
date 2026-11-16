@@ -1,0 +1,9 @@
+case_id,image,issue_type,annotators,class_a,class_b,box_a,box_b,iou,ghi_chu_tu_dong
+C001,img_001.jpg,iou_thap,156|160,truck,truck,"[400,81,560,559]","[120,81,840,559]",0.67,IoU 0.67 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C002,img_002.jpg,bo_sot_thua,156|160,,person,,"[912,315,15,59]",,Chỉ 160 vẽ person này. 156 bỏ sót hoặc 160 vẽ thừa.
+C003,img_003.jpg,iou_thap,156|160,person,person,"[506,0,205,611]","[506,0,202,396]",0.64,IoU 0.64 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C004,img_018.jpg,bo_sot_thua,156|160,person,,"[211,207,107,108]",,,Chỉ 156 vẽ person này. 160 bỏ sót hoặc 156 vẽ thừa.
+C005,img_035.jpg,iou_thap,156|160,tuk_tuk,tuk_tuk,"[380,95,175,320]","[394,204,152,211]",0.57,IoU 0.57 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C006,img_037.jpg,co_can_review,156,van,,"[221,138,506,358]",,,"156 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C007,img_037.jpg,co_can_review,160,truck,,"[221,138,506,358]",,,"160 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C008,img_037.jpg,sai_lop,156|160,van,truck,"[221,138,506,358]","[221,138,506,358]",1.00,"156 gán van, 160 gán truck cho cùng một vật"
